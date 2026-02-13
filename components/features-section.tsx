@@ -85,10 +85,10 @@ export default function FeaturesSection() {
             </h2>
 
             <div className="max-w-md">
-              <p className="text-gray-700 md:text-lg text-base">
+              {/* <p className="text-gray-700 md:text-lg text-base">
                 This portfolio will take you through my exhilarating journey
                 through the realms of data.
-              </p>
+              </p> */}
 
               {/* Buttons */}
               <div className="mt-8 flex gap-4">
@@ -96,8 +96,7 @@ export default function FeaturesSection() {
                   <motion.button
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-
-            aria-label="Load More"
+                    aria-label="Load More"
                     onClick={() =>
                       setVisibleCount((prev) => prev + FEATURES_PER_LOAD)
                     }
@@ -112,7 +111,7 @@ export default function FeaturesSection() {
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                     onClick={() => setVisibleCount(FEATURES_PER_LOAD)}
-                      aria-label="Load less"
+                    aria-label="Load less"
                     className="px-8 py-3 border border-[#1a2332] text-[#1a2332] rounded-full font-semibold hover:bg-[#1a2332] hover:text-white transition-colors"
                   >
                     Load Less

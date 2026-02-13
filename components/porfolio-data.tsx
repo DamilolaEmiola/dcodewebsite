@@ -1,10 +1,10 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import Link from "next/link"
-import { useState } from "react"
+import { motion } from "framer-motion";
+import Link from "next/link";
+import { useState } from "react";
 
-const FEATURES_PER_LOAD = 4
+const FEATURES_PER_LOAD = 4;
 
 const features = [
   {
@@ -56,42 +56,42 @@ const features = [
       "Computer vision system for detecting distress in asphalt pavement images using deep learning techniques.",
     url: "https://clammy-tent-c59.notion.site/Computer-Vision-Distress-Detection-in-Asphalt-Pavement-Images-Abridged-Research-Paper-ddce266eebb042b88c42042ccd4d086c",
   },
-   {
+  {
     icon: "👁️",
     title: "Applcation App Generator",
     description:
       "Computer vision system for detecting distress in asphalt pavement images using deep learning techniques.",
     url: "/",
   },
-   {
+  {
     icon: "👁️",
     title: "Cybersecurity Threat Detection using ML Algorithms",
     description:
       "Computer vision system for detecting distress in asphalt pavement images using deep learning techniques.",
     url: "/",
   },
-   {
+  {
     icon: "👁️",
     title: "Data Streaming",
     description:
       "Computer vision system for detecting distress in asphalt pavement images using deep learning techniques.",
     url: "/",
   },
-   {
+  {
     icon: "👁️",
     title: "Domain Price Prediction",
     description:
       "Computer vision system for detecting distress in asphalt pavement images using deep learning techniques.",
     url: "/",
   },
-   {
+  {
     icon: "👁️",
     title: "friday effect jupyter",
     description:
       "Computer vision system for detecting distress in asphalt pavement images using deep learning techniques.",
     url: "/",
   },
-   {
+  {
     icon: "👁️",
     title: "friday_effect_workbook (Pyspark)",
     description:
@@ -112,20 +112,23 @@ const features = [
       "Computer vision system for detecting distress in asphalt pavement images using deep learning techniques.",
     url: "/",
   },
-]
+];
 
 export default function PortfolioData() {
-  const [visibleCount, setVisibleCount] = useState(FEATURES_PER_LOAD)
-  const [expandedIndex, setExpandedIndex] = useState<number | null>(null)
+  const [visibleCount, setVisibleCount] = useState(FEATURES_PER_LOAD);
+  const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
 
-  const visibleFeatures = features.slice(0, visibleCount)
+  const visibleFeatures = features.slice(0, visibleCount);
 
   const toggleReadMore = (index: number) => {
-    setExpandedIndex(expandedIndex === index ? null : index)
-  }
+    setExpandedIndex(expandedIndex === index ? null : index);
+  };
 
   return (
-    <section className="md:pb-20 md:pt-40 py-10 px-6 bg-[#f5f5f5] mb-[80px]" id="my-work">
+    <section
+      className="md:pb-20 md:pt-40 py-10 px-6 bg-[#f5f5f5] mb-[80px]"
+      id="my-work"
+    >
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <motion.div
@@ -137,17 +140,15 @@ export default function PortfolioData() {
         >
           <div className="flex flex-col md:flex-row justify-between gap-10">
             <h2 className=" text-[42px] lg:text-5xl font-bold text-blue leading-tight lg:leading-normal">
-             Our 
-              <span className="block text-secondary">
-                 Portfolio of Works
-              </span>
+              Our
+              <span className="block text-secondary">Portfolio of Works</span>
             </h2>
 
             <div className="max-w-md">
-              <p className="text-gray-700 md:text-lg text-base">
+              {/* <p className="text-gray-700 md:text-lg text-base">
                 This portfolio will take you through my exhilarating journey
                 through the realms of data.
-              </p>
+              </p> */}
 
               {/* Buttons */}
               <div className="mt-8 flex gap-4">
@@ -184,8 +185,8 @@ export default function PortfolioData() {
         {/* Grid */}
         <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {visibleFeatures.map((feature, index) => {
-            const isLong = feature.description.length > 70
-            const isExpanded = expandedIndex === index
+            const isLong = feature.description.length > 70;
+            const isExpanded = expandedIndex === index;
 
             return (
               <motion.div
@@ -201,7 +202,6 @@ export default function PortfolioData() {
 
                   {/* Clickable Title */}
                   <a
-                    
                     aria-label="feature title"
                     rel="noopener noreferrer"
                     className="block text-lg font-bold mb-3 hover:text-primary hover:pl-2 hover:border-l-2 hover:border-primary hover:underline underline-offset-4"
@@ -213,29 +213,31 @@ export default function PortfolioData() {
                     {isLong && !isExpanded
                       ? feature.description.slice(0, 40) + ""
                       : feature.description}
-                       {isLong && (
-                    <button
-                    aria-label="toggleReadMore"
-                      onClick={() => toggleReadMore(index)}
-                      className="mt-0 text-sm font-semibold"
-                    >
-                      {isExpanded ? "" : "..."}
-                    </button>
-                  )}
+                    {isLong && (
+                      <button
+                        aria-label="toggleReadMore"
+                        onClick={() => toggleReadMore(index)}
+                        className="mt-0 text-sm font-semibold"
+                      >
+                        {isExpanded ? "" : "..."}
+                      </button>
+                    )}
                   </p>
 
                   <Link
-                  href={feature.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className=" underline underline-offset-4 hover:text-primary "
-                  >Read more</Link>
+                    href={feature.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className=" underline underline-offset-4 hover:text-primary "
+                  >
+                    Read more
+                  </Link>
                 </div>
               </motion.div>
-            )
+            );
           })}
         </div>
       </div>
     </section>
-  )
+  );
 }

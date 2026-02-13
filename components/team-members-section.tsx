@@ -10,7 +10,7 @@ const TEAM_MEMBERS = [
     role: "Lead Data Scientist & AI Specialist",
     bio: "Data professional with 9+ years in Python scripting, SQL, and Data Modelling. Expert in GPT-4 automation and public sector digital services.",
     image: "/lady.webp",
-    url: "/about"
+    url: "/about",
   },
 ];
 
@@ -19,12 +19,10 @@ export default function TeamMembersSection() {
 
   return (
     <section className="relative  py-32 lg:min-h-screen flex items-center justify-center overflow-hidden bg-[#fafafa] px-4">
-      
       <div className="absolute top-0 left-1/4 w-96 h-96 bg-secondary/5 rounded-full blur-3xl -z-10" />
       <div className="absolute bottom-0 right-1/4 w-64 h-64 bg-primary/5 rounded-full blur-3xl -z-10" />
 
       <div className="max-w-7xl mx-auto w-full flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-20">
-        
         <header className="w-full lg:w-1/2 text-center lg:text-left">
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -37,10 +35,13 @@ export default function TeamMembersSection() {
               <span className="text-secondary">Visionaries</span>
             </h2>
             <p className="mt-6 text-xs lg:text-base text-secondary max-w-2xl">
-              Expert minds driving the future of AI and data through 
-              innovation and technical excellence. killed at translating complex data into actionable insights for product, operational, and executive teams, with experience in Agile environments and a strong focus on data quality, governance, and stakeholder collaboration.
+              Expert minds driving the future of AI and data through innovation
+              and technical excellence. Skilled at translating complex data into
+              actionable insights for product, operational, and executive teams,
+              with experience in Agile environments and a strong focus on data
+              quality, governance, and stakeholder collaboration.
             </p>
-            
+
             {/* Decorative line for desktop */}
             <div className="hidden lg:block w-24 h-1.5 bg-secondary mt-10 rounded-full" />
           </motion.div>
@@ -67,11 +68,10 @@ export default function TeamMembersSection() {
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-blue/80 via-transparent to-transparent opacity-60 group-hover:opacity-90 transition-opacity" />
-                
-            
+
                 <div className="absolute top-6 left-6 bg-white/10 backdrop-blur-2xl border border-black/20 px-4 py-2 rounded-full">
                   <span className="text-secondary text-xs font-bold tracking-widest uppercase">
-                    {member.role.split('&')[0]}
+                    {member.role.split("&")[0]}
                   </span>
                 </div>
               </div>
@@ -88,10 +88,12 @@ export default function TeamMembersSection() {
                   <p className="text-gray-500 text-sm leading-relaxed line-clamp-3">
                     {member.bio}
                   </p>
-                  
+
                   <div className="mt-6 flex items-center text-blue font-black text-xs uppercase tracking-[0.2em] group-hover:text-secondary transition-all">
-                    View Full Profile 
-                    <span className="ml-2 group-hover:translate-x-2 transition-transform">→</span>
+                    View Full Profile
+                    <span className="ml-2 group-hover:translate-x-2 transition-transform">
+                      →
+                    </span>
                   </div>
                 </div>
               </div>
