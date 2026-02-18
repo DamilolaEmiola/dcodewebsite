@@ -46,7 +46,10 @@ export default function HeroSection() {
                 </span>
               </h1>
               <p className="text-xs lg:text-base text-white/80 max-w-2xl">
-                We deliver data solutions that work smarter, faster, and drive real impact. By combining analytics, automation, and scalable tools, we help businesses turn raw data into actionable insights, empowering better decisions and tangible results.
+                We deliver data solutions that work smarter, faster, and drive
+                real impact. By combining analytics, automation, and scalable
+                tools, we help businesses turn raw data into actionable
+                insights, empowering better decisions and tangible results.
               </p>
             </div>
 
@@ -75,9 +78,7 @@ export default function HeroSection() {
               <div className="w-5 h-5 rounded-full bg-primary flex items-center justify-center text-[#1a2332]">
                 ✓
               </div>
-              <span className="text-sm text-primary">
-                AI Automation 
-              </span>
+              <span className="text-sm text-primary">AI Automation</span>
             </motion.div>
             <motion.div
               initial={{ opacity: 0 }}
@@ -89,9 +90,7 @@ export default function HeroSection() {
               <div className="w-5 h-5 rounded-full bg-primary flex items-center justify-center text-[#1a2332]">
                 ✓
               </div>
-              <span className="text-sm text-primary">
-                Computer Vision
-              </span>
+              <span className="text-sm text-primary">Computer Vision</span>
             </motion.div>
           </motion.div>
         </div>
