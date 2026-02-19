@@ -21,7 +21,7 @@ export default function OfferSection() {
     const body = `Hello,\n\nMy email is: ${email}\n\nI would like to get in touch.`;
 
     window.location.href = `mailto:info@dcodeanalytics.xyz.com?subject=${encodeURIComponent(
-      subject
+      subject,
     )}&body=${encodeURIComponent(body)}`;
   };
 
@@ -33,7 +33,7 @@ export default function OfferSection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="relative rounded-3xl bg-blue px-2 lg:px-4"
+          className="relative rounded-3xl bg-blue px-2 lg:px-4 overflow-hidden"
         >
           <div className="relative bgGridLines grid grid-cols-1 md:grid-cols-3 items-center gap-2 md:gap-12 overflow-visible">
             <h2 className="text-2xl md:text-4xl font-bold text-primary text-center pt-4">
@@ -71,7 +71,7 @@ export default function OfferSection() {
                 viewport={{ once: true }}
                 className="hidden md:flex text-card text-base max-w-sm text-center lg:text-left"
               >
-               Do you have a project We can help you with? Let's talk about it.
+                Do you have a project We can help you with? Let's talk about it.
               </motion.p>
               <div className="w-full max-w-sm mt-4">
                 <div className="mb-20 md:mb-0 flex items-center w-full rounded-full p-1 bg-gradient-to-r from-[#1e9fa8]/70 to-[#1a7f8f]/70 backdrop-blur-md border border-white/20 shadow-lg">
