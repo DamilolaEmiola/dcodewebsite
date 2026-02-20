@@ -19,9 +19,11 @@ import {
 
 export default function ExpertiseSection() {
   const Checkmarks = [
-    "Transport Policy Shift: Influenced TfL's launch of Off-Peak Fridays through my “Friday Effect” analysis, helping reshape commuter patterns and drive post-pandemic recovery in Central London.",
-    "AI Integration at Scale: Deployed GPT-4 automation to streamline data workflows, eliminating 96% of manual review time and setting the groundwork for AI-driven operations in planning.",
-    "Civic Data Engagement: Delivered the technical backbone for a mayoral exhibition on planning services, translating complex datasets into accessible visuals viewed by over 1k+ Londoners (est.).",
+    "AI at Operational Scale: Embedding AI-backed workflows in urban planning.",
+    "Metropolitan Policy Impact: “Friday Effect” model informed Off-Peak Fridays launch.",
+    "Predictive Retention Analytics: Churn models that identified at-risk customers for strategic retention action.",
+    "Investment Performance Analytics at Scale: Mission-critical back-end models that tracked returns across complex, high-volume portfolios.",
+    "Enterprise Data Quality Transformation: Audits and system remediation that improved reporting accuracy and data trust.",
   ];
 
   const columns = [
@@ -53,7 +55,7 @@ export default function ExpertiseSection() {
       },
       {
         title: "Executive Reporting",
-        icon: <SiApacheairflow/>,
+        icon: <SiApacheairflow />,
         desc: "Delivering strategic dashboards for leadership.",
       },
       {
@@ -135,7 +137,7 @@ export default function ExpertiseSection() {
             </div>
           </div>
 
-          <div className="flex gap-2 h-97 overflow-hidden  ">
+          <div className="flex gap-2 h-99  overflow-hidden  ">
             {columns.map((col, colIndex) => {
               const direction = colIndex % 2 === 0 ? "up" : "down";
 
