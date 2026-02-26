@@ -25,14 +25,14 @@ const projects: Project[] = [
     title: "Alternative R&B",
     description: "A music-focused web experience exploring the sound and evolution of Alternative R&B.",
     image: "/projects/two.png",
-    href: "https://www.shecodes.io/cohorts/2023/projects/2332865",
+    href: "https://www.shecodes.io/projects/2332865",
   },
   {
     id: 3,
     title: "World Clock",
     description: "A world clock application that shows current time across multiple global time zones.",
     image: "/projects/four.png",
-    href: "https://www.shecodes.io/cohorts/2130/projects/2407435",
+    href: "https://www.shecodes.io/projects/2407435",
   },
   {
     id: 4,
