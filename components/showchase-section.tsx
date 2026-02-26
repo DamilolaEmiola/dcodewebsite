@@ -18,7 +18,7 @@ const projects: Project[] = [
     title: "Weather App",
     description: "A clean and responsive weather app that displays real-time weather conditions using modern APIs.",
     image: "/projects/three.png",
-    href: "https://www.shecodes.io/cohorts/2036/projects/2395496",
+    href: "https://www.shecodes.io/projects/2395496",
   },
   {
     id: 2,
