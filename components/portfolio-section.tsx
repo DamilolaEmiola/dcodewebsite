@@ -71,7 +71,7 @@ export default function PortfolioPage() {
 
   return (
     <main id="dark-section " className="min-h-screen portfolio  pt-32 pb-20 px-6">
-
+      s
       <section className="max-w-7xl mx-auto mb-20">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -79,13 +79,13 @@ export default function PortfolioPage() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="max-w-3xl"
         >
-          
-           <h2 className="text-[42px] lg:text-5xl font-bold  text-blue tracking-tight leading-[1.1] mb-4">
-              Selected {" "}
-              <span className="text-card">Works</span>
-            </h2>
+
+          <h2 className="text-[42px] lg:text-5xl font-bold  text-blue tracking-tight leading-[1.1] mb-4">
+            Selected {" "}
+            <span className="text-card">Works</span>
+          </h2>
           <p className="text-lg text-card leading-relaxed border-l-2 border-primary pl-6">
-            A fusion of data science and visual precision. Exploring the intersection of 
+            A fusion of data science and visual precision. Exploring the intersection of
             predictive modelling, UI refinement, and actionable analytics.
           </p>
         </motion.div>
@@ -124,13 +124,9 @@ function ProjectCard({ project, index }: { project: any; index: number }) {
           fill
           className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
         />
-        
+
         {/* URL Stack Indicator (if multiple images) */}
-        {project.images.length > 1 && (
-          <div className="absolute top-4 right-4 z-10 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest text-slate-800 shadow-sm">
-            +{project.images.length - 1} View Variation
-          </div>
-        )}
+
 
         {/* Hover Overlay */}
         <AnimatePresence>
@@ -165,11 +161,11 @@ function ProjectCard({ project, index }: { project: any; index: number }) {
           </h3>
         </div>
         <div className="p-4 rounded-full border border-slate-200 flex items-center justify-center group-hover:bg-slate-900 group-hover:border-slate-900 transition-all">
-          <svg 
+          <svg
             width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"
             className="text-slate-400 group-hover:text-white transition-colors rotate-[-45deg] group-hover:rotate-0"
           >
-            <path d="M3.5 7.5H11.5M11.5 7.5L8.5 4.5M11.5 7.5L8.5 10.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+            <path d="M3.5 7.5H11.5M11.5 7.5L8.5 4.5M11.5 7.5L8.5 10.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
         </div>
       </div>
