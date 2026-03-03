@@ -39,7 +39,7 @@ const projects: Project[] = [
     title: "Poem Generator",
     description: "An AI-powered poem generator that creates playful three-stanza poems based on any topic.",
     image: "/projects/one.png",
-    href: "https://gamegaindashboard.netlify.app/",
+    href: "https://www.shecodes.io/projects/2452719",
   },
 ];
 
@@ -64,9 +64,9 @@ const Projects: React.FC = () => {
           <div
             key={project.id}
             onClick={() => setActiveIndex(index)}
-            className={`relative transition-all duration-500 ease-in-out rounded-3xl overflow-hidden shadow-md cursor-pointer 
-              ${activeIndex === index 
-                ? "flex-[5] md:flex-[4] opacity-100" 
+            className={`relative transition-all duration-500 ease-in-out rounded-3xl overflow-hidden shadow-md cursor-pointer
+              ${activeIndex === index
+                ? "flex-[5] md:flex-[4] opacity-100"
                 : "flex-1 md:flex-[0.5] opacity-60"
               }`}
           >
@@ -77,29 +77,27 @@ const Projects: React.FC = () => {
               priority={index === 0}
               className="object-cover object-top transition-transform duration-500"
             />
-            
+
             {/* Gradient Overlay for better text readability */}
             <div
-              className={`absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent transition-opacity duration-500 ${
-                activeIndex === index ? "opacity-100" : "opacity-0"
-              }`}
+              className={`absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent transition-opacity duration-500 ${activeIndex === index ? "opacity-100" : "opacity-0"
+                }`}
             />
 
             <div
-              className={`absolute bottom-0 left-0 right-0 z-50 p-4 md:p-8 transition-all duration-500 transform ${
-                activeIndex === index 
-                  ? "translate-y-0 opacity-100" 
-                  : "translate-y-10 opacity-0"
-              }`}
+              className={`absolute bottom-0 left-0 right-0 z-50 p-4 md:p-8 transition-all duration-500 transform ${activeIndex === index
+                ? "translate-y-0 opacity-100"
+                : "translate-y-10 opacity-0"
+                }`}
             >
               <h3 className="text-lg lg:text-2xl font-bold text-white whitespace-nowrap">
                 {project.title}
               </h3>
-              
+
               <p className="text-white/90 text-xs lg:text-sm mt-2 line-clamp-2 md:line-clamp-none max-w-md">
                 {project.description}
               </p>
-              
+
               <div className="mt-4">
                 <Link
                   target="_blank"
